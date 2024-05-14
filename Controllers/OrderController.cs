@@ -18,6 +18,13 @@ public class OrderController : ControllerBase
         _logger = logger;
     }
 
+    [HttpGet]
+    [Route("/")]
+    public string ShowWorking()
+    {
+        return "Hello World";
+    }
+
     [HttpGet(Name = "GetOrders")]
     public IEnumerable<Order> Get()
     {

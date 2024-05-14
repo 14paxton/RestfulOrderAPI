@@ -1,6 +1,7 @@
+using RestfulOrderAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CSharp.Controllers;
+namespace RestfulOrderAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -28,21 +29,57 @@ public class OrderController : ControllerBase
     [HttpPost(Name = "CreateOrder")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public ActionResult<Order> Create([FromBody] Order newOrder)
+    public IActionResult Create([FromBody] Order newOrder)
     {
-        return CreatedAtAction(newOrder.Id.ToString(), newOrder);
+        OrderService.Add(newOrder);
+        return CreatedAtAction(nameof(Get), newOrder);
     }
 
     [HttpGet(Name = "GetOrders")]
-    public IEnumerable<Order> Get()
+    public ActionResult<List<Order>> GetAll() => OrderService.GetAll();
+
+    [HttpGet("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status302Found)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Order> Get(Guid id)
     {
-        return Enumerable
-            .Range(1, 5)
-            .Select(index => new Order
-            {
-                Id = Guid.NewGuid(),
-                Email = Orders[Random.Shared.Next(Orders.Length)]
-            })
-            .ToArray();
+        Order? order = OrderService.Get(id);
+
+        if (order == null)
+            return NotFound();
+
+        return order;
+    }
+
+    [HttpPut("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status302Found)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public IActionResult Update(Guid id, Order order)
+    {
+        if (id != order.OrderId)
+            return BadRequest();
+
+        Order? existingOrder = OrderService.Get(id);
+        if (existingOrder is null)
+            return NotFound();
+
+        OrderService.Update(order);
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status302Found)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public IActionResult Delete(Guid id)
+    {
+        Order? pizza = OrderService.Get(id);
+
+        if (pizza is null)
+            return NotFound();
+
+        OrderService.Delete(id);
+
+        return NoContent();
     }
 }

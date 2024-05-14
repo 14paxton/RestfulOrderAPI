@@ -22,7 +22,7 @@ dotnet run --urls=https://localhost:5101
 pref set editor.command.default "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
 ```
 
-    > set default args
+> set default args
 
    ```shell
         pref set editor.command.default.arguments "--disable-extensions --new-window"
@@ -79,7 +79,7 @@ get Order
 
 # Entity Framework
 
-## add
+## install
 
 ```shell
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite;
@@ -89,14 +89,26 @@ dotnet tool install --global dotnet-ef;
 
 ## create db tables
 
-```shell
-using ContosoPizza.Data;
+> in Program.cs add
+
+```csharp
+using RestfulOrderAPI.Data;
+
+///
+
+builder.Services.AddSqlite<OrderContext>("Data Source=RestfulOrderAPI.db");
+```
+
+> initial migrations
+
+```csharp
+dotnet ef migrations add InitialCreate --context OrderContext
 ```
 
 ## apply create
 
 ```shell
-dotnet ef database update --context PizzaContext
+dotnet ef database update --context OrderContext
 ```
 
 ## revisions

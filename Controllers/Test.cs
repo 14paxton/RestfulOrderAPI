@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace CSharp.Controllers
+namespace RestfulOrderAPI.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]

@@ -1,5 +1,6 @@
 using RestfulOrderAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using RestfulOrderAPI.Models;
 
 namespace RestfulOrderAPI.Controllers;
 
@@ -7,16 +8,12 @@ namespace RestfulOrderAPI.Controllers;
 [Route("[controller]")]
 public class OrderController : ControllerBase
 {
-    private static readonly string[] Orders = new[]
-    {
-        "order1", "order2", "order3", "order4", "order5"
-    };
+    // private readonly ILogger<OrderController> _logger;
+    OrderService _orderService;
 
-    private readonly ILogger<OrderController> _logger;
-
-    public OrderController(ILogger<OrderController> logger)
+    public OrderController(OrderService orderService)
     {
-        _logger = logger;
+        _orderService = orderService;
     }
 
     [HttpGet]
@@ -31,19 +28,22 @@ public class OrderController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult Create([FromBody] Order newOrder)
     {
-        OrderService.Add(newOrder);
-        return CreatedAtAction(nameof(Get), newOrder);
+        Order createdOrder = _orderService.Add(newOrder);
+        return CreatedAtAction(nameof(Get), new { id = createdOrder.Id }, createdOrder);
     }
 
     [HttpGet(Name = "GetOrders")]
-    public ActionResult<List<Order>> GetAll() => OrderService.GetAll();
+    public IEnumerable<Order> GetAll()
+    {
+        return _orderService.GetAll();
+    }
 
     [HttpGet("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status302Found)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult<Order> Get(Guid id)
     {
-        Order? order = OrderService.Get(id);
+        Order? order = _orderService.Get(id);
 
         if (order == null)
             return NotFound();
@@ -56,14 +56,14 @@ public class OrderController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult Update(Guid id, Order order)
     {
-        if (id != order.OrderId)
+        if (id != order.Id)
             return BadRequest();
 
-        Order? existingOrder = OrderService.Get(id);
+        Order? existingOrder = _orderService.Get(id);
         if (existingOrder is null)
             return NotFound();
 
-        OrderService.Update(order);
+        _orderService.Update(order);
 
         return NoContent();
     }
@@ -73,12 +73,12 @@ public class OrderController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IActionResult Delete(Guid id)
     {
-        Order? pizza = OrderService.Get(id);
+        Order? pizza = _orderService.Get(id);
 
         if (pizza is null)
             return NotFound();
 
-        OrderService.Delete(id);
+        _orderService.Delete(id);
 
         return NoContent();
     }

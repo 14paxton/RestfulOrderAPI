@@ -1,4 +1,6 @@
 ﻿
+using RestfulOrderAPI.Models;
+
 namespace RestfulOrderAPI.Data
 {
     public static class DbInitializer

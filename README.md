@@ -16,6 +16,10 @@ dotnet run --urls=https://localhost:5101
  dotnet tool install -g Microsoft.dotnet-httprepl;
 ```
 
+```shell
+export PATH="$HOME/.dotnet/tools:$PATH"
+```
+
 ## Set text editor for POST
 
 ```shell
@@ -114,13 +118,13 @@ dotnet ef database update --context OrderContext
 ## revisions
 
 ```shell
-dotnet ef migrations add ModelRevisions --context PizzaContext
+dotnet ef migrations add ModelRevisions --context OrderContext
 ```
 
 ## update
 
 ```shell
-dotnet ef database update --context PizzaContext
+dotnet ef database update --context OrderContext
 ```
 
 ## Build scafolding
@@ -138,5 +142,3 @@ Scaffolds a DbContext and model classes using the provided connection string.
 Specifies the Microsoft.EntityFrameworkCore.Sqlite database provider should be used.
 Specifies directories for the resulting DbContext and model classes.
 ```
-
-pref set editor.command.default "/System/Applications/TextEdit.app/Contents/MacOS/TextEdit"

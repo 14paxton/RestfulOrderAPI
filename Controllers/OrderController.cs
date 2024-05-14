@@ -22,7 +22,7 @@ public class OrderController : ControllerBase
     [Route("/")]
     public string ShowWorking()
     {
-        return "Hello World";
+        return "Hello World!";
     }
 
     [HttpGet(Name = "GetOrders")]

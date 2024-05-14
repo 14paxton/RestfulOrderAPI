@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RestfulOrderAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class UseSQLLite : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,9 +15,9 @@ namespace RestfulOrderAPI.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    OrderId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Email = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

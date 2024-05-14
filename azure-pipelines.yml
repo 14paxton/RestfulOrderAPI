@@ -32,3 +32,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Free Trial(80846640-c6ce-4d33-aa12-c45dcd84edac)'
+    appType: 'webAppLinux'
+    appName: 'restfulorders'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOTNETCORE|7.0'

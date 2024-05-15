@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestfulOrderAPI.Data;
 using RestfulOrderAPI.Models;
@@ -28,15 +29,29 @@ public class OrderService
         return order;
     }
 
-    public void Delete(Guid id)
+    public bool Delete(Guid id)
     {
+        bool returnValue = false;
         Order? orderToDelete = _context.Orders.Find(id);
-        if (orderToDelete is null) return;
-        _context.Orders.Remove(orderToDelete);
-        _context.SaveChanges();
+        if (orderToDelete is null)
+            return returnValue;
+
+        try
+        {
+            _context.Orders.Remove(orderToDelete);
+            _context.SaveChanges();
+            returnValue = true;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw new InvalidOperationException("Unable to Delete");
+        }
+
+        return returnValue;
     }
 
-    public bool Update(Order order)
+    public Order Update(Order order)
     {
         Order? orderToUpdate = _context.Orders.Find(order.Id);
         if (orderToUpdate is null)
@@ -50,6 +65,6 @@ public class OrderService
 
         _context.SaveChanges();
 
-        return true;
+        return orderToUpdate;
     }
 }

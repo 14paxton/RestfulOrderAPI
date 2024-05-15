@@ -9,18 +9,11 @@ namespace RestfulOrderAPI.Controllers;
 public class OrderController : ControllerBase
 {
     // private readonly ILogger<OrderController> _logger;
-    OrderService _orderService;
+    private OrderService _orderService;
 
     public OrderController(OrderService orderService)
     {
         _orderService = orderService;
-    }
-
-    [HttpGet]
-    [Route("/")]
-    public string ShowWorking()
-    {
-        return "Hello World!";
     }
 
     [HttpPost(Name = "CreateOrder")]
@@ -63,14 +56,13 @@ public class OrderController : ControllerBase
         if (existingOrder is null)
             return NotFound();
 
-        _orderService.Update(order);
-
-        return NoContent();
+        Order updatedOrder = _orderService.Update(order);
+        return CreatedAtAction(nameof(Get), new { id = updatedOrder.Id }, updatedOrder);
     }
 
     [HttpDelete("{id:guid}")]
-    [ProducesResponseType(StatusCodes.Status302Found)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public IActionResult Delete(Guid id)
     {
         Order? pizza = _orderService.Get(id);
@@ -78,8 +70,8 @@ public class OrderController : ControllerBase
         if (pizza is null)
             return NotFound();
 
-        _orderService.Delete(id);
-
-        return NoContent();
+        return _orderService.Delete(id)
+            ? Ok()
+            : Conflict();
     }
 }

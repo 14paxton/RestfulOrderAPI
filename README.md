@@ -13,11 +13,15 @@ dotnet run --urls=https://localhost:5101
 # HttpRepl
 
 ```shell
+::install
  dotnet tool install -g Microsoft.dotnet-httprepl;
-```
 
-```shell
-export PATH="$HOME/.dotnet/tools:$PATH"
+::set path to tools
+export PATH="$PATH:/Users/bp/.dotnet/tools";
+
+::test web api
+httprepl http://localhost:5001
+
 ```
 
 ## Set text editor for POST
@@ -133,8 +137,6 @@ dotnet ef database update --context OrderContext
 dotnet ef dbcontext scaffold "Data Source=./Promotions/Promotions.db" Microsoft.EntityFrameworkCore.Sqlite --context-dir ./Data --output-dir .\Models
 ```
 
--
-
 ```
 The preceding command:
 
@@ -142,3 +144,11 @@ Scaffolds a DbContext and model classes using the provided connection string.
 Specifies the Microsoft.EntityFrameworkCore.Sqlite database provider should be used.
 Specifies directories for the resulting DbContext and model classes.
 ```
+
+# Testing
+
+## Use HTTP file for testing controller
+
+> Reference: [HTTP Testing Files](https://www.jetbrains.com/help/idea/exploring-http-syntax.html#use-a-variable-inside-the-request)
+
+[RestfulOrdersAPI.http](RestfulOrdersAPI.http)

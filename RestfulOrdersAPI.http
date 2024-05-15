@@ -1,6 +1,34 @@
 @CSharp_HostAddress = http://localhost:5070
 
-GET {{CSharp_HostAddress}}/weatherforecast/
+POST {{CSharp_HostAddress}}/Order
+Content-Type: application/json
+
+{
+  "email": "testmailyay@testmail.com"
+}
+> {%
+    client.global.set("order_guid", response.body["id"]);
+    client.log(response.body["id"]);
+    client.log(client.global.get("id"));
+
+%}
+
+###
+GET {{CSharp_HostAddress}}/Order
 Accept: application/json
 
 ###
+GET {{CSharp_HostAddress}}/Order/{{order_guid}}
+Accept: application/jsonGET
+
+###
+PUT {{CSharp_HostAddress}}/Order/{{order_guid}}
+Content-Type: application/json
+
+{
+  "id": "{{order_guid}}",
+  "email": "eeeeeeeee@gmail.com"
+}
+
+###
+DELETE {{CSharp_HostAddress}}/Order/{{order_guid}}

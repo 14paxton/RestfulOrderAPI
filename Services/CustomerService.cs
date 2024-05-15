@@ -17,10 +17,11 @@ public class CustomerService
         return _context.Customers.Any(e => e.Email == email);
     }
 
-    public async Task CreateCustomer(Customer newCustomer)
+    public async Task<Customer> CreateCustomer(Customer newCustomer)
     {
         _context.Customers.Add(newCustomer);
-        await _context.SaveChangesAsync();
+         await _context.SaveChangesAsync();
+         return newCustomer;
     }
 
     public IEnumerable<Order>? GetCustomerOrders(Guid id)

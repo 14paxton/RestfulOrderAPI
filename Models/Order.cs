@@ -1,6 +1,6 @@
-
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using static System.DateTime;
 using static System.Guid;
 
@@ -31,5 +31,5 @@ public class Order
 
     [Required] [ForeignKey("CustomerId")] public Guid CustomerId { get; set; }
 
-    [Required] public Customer Customer { get; set; }
+    [JsonIgnore] public Customer Customer { get; set; }
 }

@@ -1,6 +1,7 @@
 #region
 
 using Microsoft.EntityFrameworkCore;
+using RestfulOrderAPI.Controllers;
 using RestfulOrderAPI.Data;
 using RestfulOrderAPI.Models;
 
@@ -29,19 +30,22 @@ public class OrderService
     public Order? Get(Guid id)
     {
         return _context
-            .Orders.AsNoTracking()
+            .Orders
             .SingleOrDefault(o => o.Id == id);
     }
 
     public Order Add(Customer customer)
     {
-        if (!_customerService.CustomerExists(customer.Email))
-        {
-            _ = _customerService.CreateCustomer(customer);
-        }
+        Customer savedCustomer = _customerService.CustomerExists(customer.Email)
+            ? _context
+                .Customers
+                .Single(c => c.Email == customer.Email)
+            : _customerService.CreateCustomer(customer)
+                .Result;
 
-        Order newOrder = new(customer);
+        Order newOrder = new(savedCustomer);
         _context.Orders.Add(newOrder);
+        savedCustomer.Orders.Add(newOrder);
         _context.SaveChanges();
         return newOrder;
     }
@@ -69,7 +73,7 @@ public class OrderService
         return returnValue;
     }
 
-    public Order Update(Order order)
+    public Order Update(OrderCommandObject order)
     {
         Order? orderToUpdate = _context.Orders.Find(order.Id);
         if (orderToUpdate is null) throw new InvalidOperationException("Order Does Not Exist");

@@ -48,7 +48,7 @@ public class OrderController : ControllerBase
     [HttpPut("{id:guid}")]
     [ProducesResponseType(StatusCodes.Status302Found)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public IActionResult Update(Guid id, Order order)
+    public IActionResult Update(Guid id, OrderCommandObject order)
     {
         if (id != order.Id)
             return BadRequest();
@@ -76,7 +76,7 @@ public class OrderController : ControllerBase
             : Conflict();
     }
 
-    [HttpGet( "Customer/{id:guid}")]
+    [HttpGet("Customer/{id:guid}")]
     [ProducesResponseType(StatusCodes.Status302Found)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public IEnumerable<Order>? GetOrdersByCustomer(Guid id)

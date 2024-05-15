@@ -29,7 +29,7 @@ public class CustomerController : ControllerBase
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<Customer>> GetCustomer(Guid id)
     {
-        Models.Customer? customer = await _context.Customers.FindAsync(id);
+        Customer? customer = await _context.Customers.FindAsync(id);
 
         if (customer == null) return NotFound();
 

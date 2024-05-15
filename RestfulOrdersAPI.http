@@ -5,10 +5,11 @@ POST {{CSharp_HostAddress}}/Order
 Content-Type: application/json
 
 {
-  "email": "testmailyay@testmail.com"
+  "email": "httpTest2@testmail.com"
 }
 > {%
     client.global.set("order_guid", response.body["id"]);
+    client.global.set("customer_guid", response.body["customerId"]);
     client.log(response.body["id"]);
     client.log(client.global.get("id"));
 
@@ -28,7 +29,8 @@ Content-Type: application/json
 
 {
   "id": "{{order_guid}}",
-  "email": "eeeeeeeee@gmail.com"
+  "createdDate" : "1922-05-15T18:17:48.782503",
+  "customerId" : "{{customer_guid}}"
 }
 
 ### DELETE

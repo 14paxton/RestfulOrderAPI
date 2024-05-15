@@ -11,7 +11,7 @@ using RestfulOrderAPI.Data;
 namespace RestfulOrderAPI.Migrations
 {
     [DbContext(typeof(OrderContext))]
-    [Migration("20240515190204_InitialCreate")]
+    [Migration("20240515231700_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

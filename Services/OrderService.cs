@@ -11,7 +11,7 @@ public class OrderService
 
     public OrderService(OrderContext context)
     {
-        _context = context;
+        _context = context ?? throw new ArgumentNullException(nameof(context));
     }
 
     public IEnumerable<Order> GetAll() => _context
@@ -40,6 +40,7 @@ public class OrderService
         {
             _context.Orders.Remove(orderToDelete);
             _context.SaveChanges();
+            _context.ChangeTracker.Clear();
             returnValue = true;
         }
         catch (Exception e)

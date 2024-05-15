@@ -1,5 +1,6 @@
 @CSharp_HostAddress = http://localhost:5070
 
+### CREATE
 POST {{CSharp_HostAddress}}/Order
 Content-Type: application/json
 
@@ -13,15 +14,15 @@ Content-Type: application/json
 
 %}
 
-###
+### GETALL
 GET {{CSharp_HostAddress}}/Order
 Accept: application/json
 
-###
+### GET
 GET {{CSharp_HostAddress}}/Order/{{order_guid}}
 Accept: application/jsonGET
 
-###
+### UPDATE
 PUT {{CSharp_HostAddress}}/Order/{{order_guid}}
 Content-Type: application/json
 
@@ -30,5 +31,5 @@ Content-Type: application/json
   "email": "eeeeeeeee@gmail.com"
 }
 
-###
+### DELETE
 DELETE {{CSharp_HostAddress}}/Order/{{order_guid}}

@@ -1,13 +1,14 @@
+#region
+
 using Microsoft.EntityFrameworkCore;
 using RestfulOrderAPI.Models;
+
+#endregion
 
 namespace RestfulOrderAPI.Data;
 
 public class OrderContext : DbContext
 {
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Order> Orders { get; set; }
-
     // public string DbPath { get; }
 
     public OrderContext(DbContextOptions<OrderContext> options) : base(options)
@@ -17,6 +18,9 @@ public class OrderContext : DbContext
         // DbPath = System.IO.Path.Join(path, "RestfulOrderAPI.db");
     }
 
+    public DbSet<Customer> Customers { get; set; }
+    public DbSet<Order> Orders { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -25,7 +29,8 @@ public class OrderContext : DbContext
             .HasIndex(u => u.Email)
             .IsUnique();
 
-        modelBuilder.Entity<Customer>()
+        modelBuilder
+            .Entity<Customer>()
             .HasMany(u => u.Orders)
             .WithOne(o => o.Customer)
             .HasForeignKey(o => o.CustomerId);

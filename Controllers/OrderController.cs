@@ -1,6 +1,7 @@
-using RestfulOrderAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using RestfulOrderAPI.Models;
+using RestfulOrderAPI.Services;
+
 
 namespace RestfulOrderAPI.Controllers;
 
@@ -9,7 +10,7 @@ namespace RestfulOrderAPI.Controllers;
 public class OrderController : ControllerBase
 {
     // private readonly ILogger<OrderController> _logger;
-    private OrderService _orderService;
+    private readonly OrderService _orderService;
 
     public OrderController(OrderService orderService)
     {
@@ -19,9 +20,9 @@ public class OrderController : ControllerBase
     [HttpPost(Name = "CreateOrder")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public IActionResult Create([FromBody] Order newOrder)
+    public IActionResult Create([FromBody] Customer customer)
     {
-        Order createdOrder = _orderService.Add(newOrder);
+        Order createdOrder = _orderService.Add(customer);
         return CreatedAtAction(nameof(Get), new { id = createdOrder.Id }, createdOrder);
     }
 
@@ -73,5 +74,13 @@ public class OrderController : ControllerBase
         return _orderService.Delete(id)
             ? Ok()
             : Conflict();
+    }
+
+    [HttpGet( "Customer/{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status302Found)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public IEnumerable<Order>? GetOrdersByCustomer(Guid id)
+    {
+        return _orderService.GetAllByCustomer(id);
     }
 }

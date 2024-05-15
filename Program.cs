@@ -8,6 +8,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSqlite<OrderContext>("Data Source=RestfulOrderAPI.db");
 builder.Services.AddScoped<OrderService>();
+builder.Services.AddScoped<CustomerService>();
 
 
 WebApplication app = builder.Build();

@@ -15,5 +15,5 @@ public class Customer(string email)
     [StringLength(50, MinimumLength = 5, ErrorMessage = "Email needs to be between 5 and 50 characters.")]
     public string Email { get; set; } = email;
 
-    public ICollection<Order> Orders { get; set; } = new List<Order> { };
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }

@@ -1,5 +1,4 @@
-﻿
-using RestfulOrderAPI.Models;
+﻿using RestfulOrderAPI.Models;
 
 namespace RestfulOrderAPI.Data
 {
@@ -12,22 +11,9 @@ namespace RestfulOrderAPI.Data
                 return; // DB has been seeded
             }
 
-
-            Order[] orders = new Order[]
-            {
-                new Order
-                {
-                    Email = "M14paxton@gmail.com",
-                },
-                new Order
-                {
-                    Email = "mike@mailinator.com",
-                },
-                new Order
-                {
-                    Email = "frank@aol.com",
-                }
-            };
+            List<string> emailList = ["M14paxton@gmail.com", "mike@mailinator.com", "frank@aol.com"];
+            IEnumerable<Customer> customers = emailList.Select(email => new Customer(email));
+            IEnumerable<Order> orders = customers.Select(customer => new Order(customer));
 
             context.Orders.AddRange(orders);
             context.SaveChanges();

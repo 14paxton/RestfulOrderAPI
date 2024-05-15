@@ -1,14 +1,34 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using static System.DateTime;
+using static System.Guid;
 
 namespace RestfulOrderAPI.Models;
 
 public class Order
 {
-    [Key]
-    public Guid Id { get; set; } = Guid.NewGuid();
+    [Key] public Guid Id { get; set; } = NewGuid();
 
-    public DateTime CreatedDate { get; set; } = DateTime.Now;
+    public DateTime CreatedDate { get; set; } = Now;
 
-    [Required]
-    public string? Email { get; set; }
+    [Required] [ForeignKey("CustomerId")] public Guid CustomerId { get; set; }
+
+    [Required] public Customer Customer { get; set; }
+
+    public Order()
+    {
+
+    }
+
+    public Order(Guid customerId, Customer customer)
+    {
+        CustomerId = customerId;
+        Customer = customer;
+    }
+
+    public Order(Customer customer)
+    {
+        CustomerId = customer.Id;
+        Customer = customer;
+    }
 }

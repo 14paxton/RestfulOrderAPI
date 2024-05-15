@@ -134,7 +134,7 @@ dotnet ef database update --context OrderContext
 ## Build scafolding
 
 ```shell
-dotnet ef dbcontext scaffold "Data Source=./Promotions/Promotions.db" Microsoft.EntityFrameworkCore.Sqlite --context-dir ./Data --output-dir .\Models
+dotnet ef dbcontext scaffold "Data Source=./Customer/Customers.db" Microsoft.EntityFrameworkCore.Sqlite --context-dir ./Data --output-dir .\Models
 ```
 
 ```

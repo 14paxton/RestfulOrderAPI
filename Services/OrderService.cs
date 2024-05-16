@@ -59,7 +59,13 @@ public class OrderService
 
         try
         {
-            _context.Orders.Remove(orderToDelete);
+            Customer? parent = _context
+                .Customers
+                .Include(p => p.Orders)
+                .FirstOrDefault(p => p.Id == orderToDelete.CustomerId);
+
+            Order? child = parent.Orders.FirstOrDefault(c => c.Id == id);
+            parent.Orders.Remove(child);
             _context.SaveChanges();
             _context.ChangeTracker.Clear();
             returnValue = true;
@@ -67,7 +73,7 @@ public class OrderService
         catch (Exception e)
         {
             Console.WriteLine(e);
-            throw new InvalidOperationException("Unable to Delete");
+            throw new InvalidOperationException($"Error Deleting: {e}");
         }
 
         return returnValue;

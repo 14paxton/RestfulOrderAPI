@@ -19,9 +19,14 @@ public class CustomerService
 
     public async Task<Customer> CreateCustomer(Customer newCustomer)
     {
+        if (CustomerExists(newCustomer.Email))
+        {
+            return _context.Customers.Single(c => c.Email == newCustomer.Email);
+        }
+
         _context.Customers.Add(newCustomer);
-         await _context.SaveChangesAsync();
-         return newCustomer;
+        await _context.SaveChangesAsync();
+        return newCustomer;
     }
 
     public IEnumerable<Order>? GetCustomerOrders(Guid id)

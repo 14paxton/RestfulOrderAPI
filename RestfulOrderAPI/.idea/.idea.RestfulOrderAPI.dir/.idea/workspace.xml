@@ -9,7 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f3363a-2ccd-4e48-93d7-9b4e03afccff" name="Changes" comment="" />
+    <list default="true" id="a4f3363a-2ccd-4e48-93d7-9b4e03afccff" name="Changes" comment="unit tests">
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/CustomerServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/CustomerServiceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/OrderServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/OrderServiceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/ref/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/ref/RestfulOrderAPI.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/refint/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/refint/RestfulOrderAPI.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestfulOrderAPI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestfulOrderAPI.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/CustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CustomerService.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +38,7 @@
     <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RESET_MODE" value="KEEP" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -42,7 +61,6 @@
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/CustomerService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/OrderService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/lamont/GitHub/RestfulOrderAPI/Services/OrderService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -68,35 +86,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.RestfulOrderAPI: http.executor&quot;: &quot;Debug&quot;,
-    &quot;6cf28efc-aafb-466e-994e-8041462349cd.executor&quot;: &quot;Debug&quot;,
-    &quot;HTTP Request.RestfulOrdersAPI | CREATE.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.RestfulOrdersAPI | DELETE.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.RestfulOrdersAPI | GET.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.RestfulOrdersAPI | GETALL.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.RestfulOrdersAPI | UPDATE.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;d59ed4f7-7371-4404-b324-c039b6347c57.executor&quot;: &quot;Debug&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.RestfulOrderAPI: http.executor": "Debug",
+    "6cf28efc-aafb-466e-994e-8041462349cd.executor": "Debug",
+    "HTTP Request.RestfulOrdersAPI | CREATE.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | DELETE.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | GET.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | GETALL.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | UPDATE.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "d59ed4f7-7371-4404-b324-c039b6347c57.executor": "Debug",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rider.code.cleanup.on.save": "true",
+    "rider.code.cleanup.on.save.only.changed.lines": "true",
+    "rider.code.cleanup.on.save.profile": "Clean",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/lamont/Library/Application Support/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/lamont/Library/Application Support/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="HTTP Request.RestfulOrdersAPI | GET">
     <configuration name="RestfulOrdersAPI | CREATE" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" requestIdentifier="CREATE" runType="Run single request">
       <method v="2" />
@@ -138,6 +160,7 @@
       <workItem from="1715828254172" duration="1297000" />
       <workItem from="1715829568182" duration="281000" />
       <workItem from="1715829855293" duration="7240000" />
+      <workItem from="1715867104501" duration="2487000" />
     </task>
     <task id="LOCAL-00001" summary="working again studid rider">
       <option name="closed" value="true" />
@@ -155,7 +178,39 @@
       <option name="project" value="LOCAL" />
       <updated>1715866984836</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="k">
+      <option name="closed" value="true" />
+      <created>1715867136254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715867136254</updated>
+    </task>
+    <task id="LOCAL-00004" summary="http tests working">
+      <option name="closed" value="true" />
+      <created>1715867203266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715867203266</updated>
+    </task>
+    <task id="LOCAL-00005" summary="http tests working">
+      <option name="closed" value="true" />
+      <created>1715867224647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715867224647</updated>
+    </task>
+    <task id="LOCAL-00006" summary="unit tests">
+      <option name="closed" value="true" />
+      <created>1715867389699</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715867389699</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +253,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="working again studid rider" />
     <MESSAGE value="tests updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests updated" />
+    <MESSAGE value="k" />
+    <MESSAGE value="http tests working" />
+    <MESSAGE value="unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

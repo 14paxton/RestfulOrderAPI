@@ -16,6 +16,10 @@ namespace RestfulOrderAPI.Tests.Services;
 [TestOf(typeof(OrderService))]
 public class OrderServiceTest
 {
+    private OrderContext _orderContext;
+    private OrderService _orderService;
+    private CustomerService _customerService;
+
     [SetUp]
     public void SetUp()
     {
@@ -27,10 +31,6 @@ public class OrderServiceTest
         _customerService = new CustomerService(_orderContext);
         _orderService = new OrderService(_orderContext, _customerService);
     }
-
-    private OrderContext _orderContext;
-    private OrderService _orderService;
-    private CustomerService _customerService;
 
     [Test]
     public async Task GetAllOrders()

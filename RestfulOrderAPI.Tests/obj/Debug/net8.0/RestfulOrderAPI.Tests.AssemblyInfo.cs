@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestfulOrderAPI.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a85354efcc91f460810a105e351af1d39b673432")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6b078843cc5f154e407c1694a9af99a03c7b0f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestfulOrderAPI.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestfulOrderAPI.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

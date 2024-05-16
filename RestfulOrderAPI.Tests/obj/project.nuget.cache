@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kkd52PA08H5seyg2oTf+9dAEaTN6GLEme6WRerGugBJCSJREiovfv4lf2GFyRt8FjKkLel0ivS1+txW4kX9xRg==",
+  "dgSpecHash": "lpavv5S5njOhrfgVegmFrNdcIKAGkdW4HCofaGDao0v9u7KoIpT6O21BtJz28cSOoop6V6gGV6dUL0Fw6T5a5g==",
   "success": true,
-  "projectFilePath": "/Users/lamont/GitHub/RestfulOrderAPI.Tests/RestfulOrderAPI.Tests.csproj",
+  "projectFilePath": "/Users/lamont/GitHub/TechnicalAssessmentSogi/RestfulOrderAPI.Tests/RestfulOrderAPI.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/lamont/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/lamont/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

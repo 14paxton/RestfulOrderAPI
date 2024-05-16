@@ -9229,11 +9229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lamont/GitHub/RestfulOrderAPI.Tests/RestfulOrderAPI.Tests.csproj",
+      "projectUniqueName": "/Users/lamont/GitHub/TechnicalAssessmentSogi/RestfulOrderAPI.Tests/RestfulOrderAPI.Tests.csproj",
       "projectName": "RestfulOrderAPI.Tests",
-      "projectPath": "/Users/lamont/GitHub/RestfulOrderAPI.Tests/RestfulOrderAPI.Tests.csproj",
+      "projectPath": "/Users/lamont/GitHub/TechnicalAssessmentSogi/RestfulOrderAPI.Tests/RestfulOrderAPI.Tests.csproj",
       "packagesPath": "/Users/lamont/.nuget/packages/",
-      "outputPath": "/Users/lamont/GitHub/RestfulOrderAPI.Tests/obj/",
+      "outputPath": "/Users/lamont/GitHub/TechnicalAssessmentSogi/RestfulOrderAPI.Tests/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
@@ -9249,8 +9249,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/lamont/GitHub/RestfulOrderAPI/RestfulOrderAPI.csproj": {
-              "projectPath": "/Users/lamont/GitHub/RestfulOrderAPI/RestfulOrderAPI.csproj"
+            "/Users/lamont/GitHub/TechnicalAssessmentSogi/RestfulOrderAPI/RestfulOrderAPI.csproj": {
+              "projectPath": "/Users/lamont/GitHub/TechnicalAssessmentSogi/RestfulOrderAPI/RestfulOrderAPI.csproj"
             }
           }
         }

@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f3363a-2ccd-4e48-93d7-9b4e03afccff" name="Changes" comment="unit tests">
-      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/CustomerServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/CustomerServiceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/OrderServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/Services/OrderServiceTest.cs" afterDir="false" />
+    <list default="true" id="a4f3363a-2ccd-4e48-93d7-9b4e03afccff" name="Changes" comment="tests working">
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/bin/Debug/net8.0/RestfulOrderAPI.dll" afterDir="false" />
@@ -19,14 +17,18 @@
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/RestfulOrderAPI.Tests.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/ref/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/ref/RestfulOrderAPI.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/refint/RestfulOrderAPI.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/Debug/net8.0/refint/RestfulOrderAPI.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../RestfulOrderAPI.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestfulOrderAPI.dir/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestfulOrderAPI.dir/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestfulOrderAPI.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestfulOrderAPI.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CustomerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/OrderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/OrderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestfulOrderAPI.db" beforeDir="false" afterPath="$PROJECT_DIR$/RestfulOrderAPI.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestfulOrdersAPI.http" beforeDir="false" afterPath="$PROJECT_DIR$/RestfulOrdersAPI.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/CustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CustomerService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,9 +92,14 @@
   "keyToString": {
     ".NET Launch Settings Profile.RestfulOrderAPI: http.executor": "Debug",
     "6cf28efc-aafb-466e-994e-8041462349cd.executor": "Debug",
+    "HTTP Request.RestfulOrdersAPI | CREATE ORDER FOR ANOTHER CUSTOMER.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | CREATE ORDER.executor": "Run",
     "HTTP Request.RestfulOrdersAPI | CREATE.executor": "Run",
     "HTTP Request.RestfulOrdersAPI | DELETE.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | GET ALL ORDERS BY CUSTOMER.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | GET CUSTOMER.executor": "Run",
     "HTTP Request.RestfulOrdersAPI | GET.executor": "Run",
+    "HTTP Request.RestfulOrdersAPI | GETALL CUSTOMERS.executor": "Run",
     "HTTP Request.RestfulOrdersAPI | GETALL.executor": "Run",
     "HTTP Request.RestfulOrdersAPI | UPDATE.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -119,29 +126,41 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="HTTP Request.RestfulOrdersAPI | GET">
-    <configuration name="RestfulOrdersAPI | CREATE" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" requestIdentifier="CREATE" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.RestfulOrdersAPI | GET ALL ORDERS BY CUSTOMER">
+    <configuration name="RestfulOrdersAPI | CREATE ORDER FOR ANOTHER CUSTOMER" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="5" requestIdentifier="CREATE ORDER FOR ANOTHER CUSTOMER" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="RestfulOrdersAPI | DELETE" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="5" requestIdentifier="DELETE" runType="Run single request">
+    <configuration name="RestfulOrdersAPI | GET ALL ORDERS BY CUSTOMER" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="8" requestIdentifier="GET ALL ORDERS BY CUSTOMER" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="RestfulOrdersAPI | GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="3" requestIdentifier="GET" runType="Run single request">
+    <configuration name="RestfulOrdersAPI | GET CUSTOMER" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="7" requestIdentifier="GET CUSTOMER" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="RestfulOrdersAPI | GETALL" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="2" requestIdentifier="GETALL" runType="Run single request">
+    <configuration name="RestfulOrdersAPI | GETALL CUSTOMERS" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="6" requestIdentifier="GETALL CUSTOMERS" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="RestfulOrdersAPI | UPDATE" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="4" requestIdentifier="UPDATE" runType="Run single request">
-      <method v="2" />
+    <configuration name="RestfulOrderAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RestfulOrderAPI.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.RestfulOrdersAPI | GET" />
-        <item itemvalue="HTTP Request.RestfulOrdersAPI | DELETE" />
-        <item itemvalue="HTTP Request.RestfulOrdersAPI | UPDATE" />
-        <item itemvalue="HTTP Request.RestfulOrdersAPI | GETALL" />
-        <item itemvalue="HTTP Request.RestfulOrdersAPI | CREATE" />
+        <item itemvalue="HTTP Request.RestfulOrdersAPI | GET ALL ORDERS BY CUSTOMER" />
+        <item itemvalue="HTTP Request.RestfulOrdersAPI | GET CUSTOMER" />
+        <item itemvalue="HTTP Request.RestfulOrdersAPI | GETALL CUSTOMERS" />
+        <item itemvalue="HTTP Request.RestfulOrdersAPI | CREATE ORDER FOR ANOTHER CUSTOMER" />
+        <item itemvalue=".NET Launch Settings Profile.RestfulOrderAPI: http" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +179,7 @@
       <workItem from="1715828254172" duration="1297000" />
       <workItem from="1715829568182" duration="281000" />
       <workItem from="1715829855293" duration="7240000" />
-      <workItem from="1715867104501" duration="2487000" />
+      <workItem from="1715867104501" duration="4028000" />
     </task>
     <task id="LOCAL-00001" summary="working again studid rider">
       <option name="closed" value="true" />
@@ -210,7 +229,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715867389699</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="customer tests working">
+      <option name="closed" value="true" />
+      <created>1715869637396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715869637396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tests working">
+      <option name="closed" value="true" />
+      <created>1715869655333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715869655333</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +291,9 @@
     <MESSAGE value="k" />
     <MESSAGE value="http tests working" />
     <MESSAGE value="unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="unit tests" />
+    <MESSAGE value="customer tests working" />
+    <MESSAGE value="tests working" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -273,6 +310,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Services/CustomerService.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/Services/CustomerService.cs" containingFunctionPresentation="Method 'GetCustomerOrders'">
+            <startOffsets>
+              <option value="1024" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1047" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,3 +1,328 @@
+GET http://localhost:5070/Order/Customer/b2a64c7e-4971-4121-8777-dad2de9d1856
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T095312.200.json
+
+###
+
+GET http://localhost:5070/Order/Customer/b2a64c7e-4971-4121-8777-dad2de9d1856
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T095301.200.json
+
+###
+
+GET http://localhost:5070/Customer/b2a64c7e-4971-4121-8777-dad2de9d1856
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T095244.200.json
+
+###
+
+GET http://localhost:5070/Customer
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T095239.200.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTestnew@testmail.com"
+}
+
+<> 2024-05-16T095236.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTestnew@testmail.com"
+}
+
+<> 2024-05-16T094854.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTestnew@testmail.com"
+}
+
+<> 2024-05-16T094853.201.json
+
+###
+
+GET http://localhost:5070/Customer
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T094844.200.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 41
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTestnew@testmail.com"
+}
+
+<> 2024-05-16T094840.201.json
+
+###
+
+GET http://localhost:5070/Order/Customer/0991a62c-5905-4646-9ca2-69ce4dd9f0b2
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T094659.200.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T094011-1.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T094011.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T094010.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T094008.201.json
+
+###
+
+GET http://localhost:5070/Order/Customer/0991a62c-5905-4646-9ca2-69ce4dd9f0b2
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T093912.200.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T093903.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T093902.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T093900.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T093858.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T093857.201.json
+
+###
+
+GET http://localhost:5070/Order/Customer/0991a62c-5905-4646-9ca2-69ce4dd9f0b2
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T093843.200.json
+
+###
+
+GET http://localhost:5070/Customer/0991a62c-5905-4646-9ca2-69ce4dd9f0b2
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T093721.200.json
+
+###
+
+GET http://localhost:5070/Customer
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-05-16T093506.200.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 42
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2111@testmail.com"
+}
+
+<> 2024-05-16T093502.201.json
+
+###
+
+POST http://localhost:5070/Order
+Content-Type: application/json
+Content-Length: 39
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "httpTest2@testmail.com"
+}
+
+<> 2024-05-16T093457.201.json
+
+###
+
 GET http://localhost:5070/Order/cc2387de-1098-4f01-ac02-cbe295c173c3
 Accept: application/jsonGET
 User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.2

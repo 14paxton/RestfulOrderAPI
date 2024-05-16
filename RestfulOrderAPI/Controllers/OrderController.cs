@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using RestfulOrderAPI.Models;
 using RestfulOrderAPI.Services;
 
-
 namespace RestfulOrderAPI.Controllers;
 
 [ApiController]

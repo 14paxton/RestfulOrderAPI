@@ -1,15 +1,11 @@
-#region
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestfulOrderAPI.Data;
 using RestfulOrderAPI.Models;
 
-#endregion
-
 namespace RestfulOrderAPI.Controllers;
 
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
 public class CustomerController : ControllerBase
 {

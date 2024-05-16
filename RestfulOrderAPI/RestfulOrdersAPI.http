@@ -1,6 +1,6 @@
 @CSharp_HostAddress = http://localhost:5070
 
-### CREATE
+### CREATE ORDER
 POST {{CSharp_HostAddress}}/Order
 Content-Type: application/json
 
@@ -12,18 +12,17 @@ Content-Type: application/json
     client.global.set("customer_guid", response.body["customerId"]);
     client.log(response.body["id"]);
     client.log(client.global.get("id"));
-
 %}
 
-### GETALL
+### GETALL ORDERS
 GET {{CSharp_HostAddress}}/Order
 Accept: application/json
 
-### GET
+### GET ORDER
 GET {{CSharp_HostAddress}}/Order/{{order_guid}}
 Accept: application/jsonGET
 
-### UPDATE
+### UPDATE ORDER
 PUT {{CSharp_HostAddress}}/Order/{{order_guid}}
 Content-Type: application/json
 
@@ -33,5 +32,32 @@ Content-Type: application/json
   "customerId" : "{{customer_guid}}"
 }
 
-### DELETE
+### CREATE ORDER FOR ANOTHER CUSTOMER
+POST {{CSharp_HostAddress}}/Order
+Content-Type: application/json
+
+{
+  "email": "httpTestnew@testmail.com"
+}
+> {%
+    client.global.set("order_guid", response.body["id"]);
+    client.global.set("customer_guid", response.body["customerId"]);
+    client.log(response.body["id"]);
+    client.log(client.global.get("id"));
+%}
+
+
+### GETALL CUSTOMERS
+GET {{CSharp_HostAddress}}/Customer
+Accept: application/json
+
+### GET CUSTOMER
+GET {{CSharp_HostAddress}}/Customer/{{customer_guid}}
+Accept: application/json
+
+### GET ALL ORDERS BY CUSTOMER
+GET {{CSharp_HostAddress}}/Order/Customer/{{customer_guid}}
+Accept: application/json
+
+### DELETE ORDER
 DELETE {{CSharp_HostAddress}}/Order/{{order_guid}}

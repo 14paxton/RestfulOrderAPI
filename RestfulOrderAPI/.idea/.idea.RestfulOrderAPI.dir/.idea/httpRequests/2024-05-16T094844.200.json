@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1803875c-90ad-45cf-b662-fe5c21069d1f",
+    "createdDate": "2024-05-15T18:17:41.856921",
+    "email": "mike@mailinator.com",
+    "orders": []
+  },
+  {
+    "id": "303ad19e-cb19-453b-ba42-6d9e596e80a4",
+    "createdDate": "2024-05-15T18:17:41.801733",
+    "email": "M14paxton@gmail.com",
+    "orders": []
+  },
+  {
+    "id": "a5013e0c-c5f5-4c21-8456-cd46ed20ad68",
+    "createdDate": "2024-05-15T18:17:41.857165",
+    "email": "frank@aol.com",
+    "orders": []
+  },
+  {
+    "id": "71e4d271-525c-4695-ae11-d0a67fbf2a8e",
+    "createdDate": "2024-05-15T18:17:48.699683",
+    "email": "httpTest2@testmail.com",
+    "orders": []
+  },
+  {
+    "id": "0991a62c-5905-4646-9ca2-69ce4dd9f0b2",
+    "createdDate": "2024-05-16T09:35:02.813646",
+    "email": "httpTest2111@testmail.com",
+    "orders": []
+  },
+  {
+    "id": "b2a64c7e-4971-4121-8777-dad2de9d1856",
+    "createdDate": "2024-05-16T09:48:40.112483",
+    "email": "httpTestnew@testmail.com",
+    "orders": []
+  }
+]

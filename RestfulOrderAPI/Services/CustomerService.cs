@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using RestfulOrderAPI.Data;
 using RestfulOrderAPI.Models;
 
@@ -31,9 +32,11 @@ public class CustomerService
 
     public IEnumerable<Order>? GetCustomerOrders(Guid id)
     {
-        Customer customer = _context.Customers.Find(id);
-        return customer != null
-            ? customer.Orders.ToList()
-            : null;
+        Customer customer = _context
+            .Customers
+            .Include(p => p.Orders)
+            .First(p => p.Id == id);
+
+        return customer.Orders;
     }
 }

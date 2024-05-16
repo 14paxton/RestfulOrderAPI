@@ -1,3 +1,9 @@
+# Things I Ran Out Of Time For
+
+- Clean code
+- - Use Repository class clean up db business logic for services
+  - 
+
 # Create
 
 ```shell

@@ -68,35 +68,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.RestfulOrderAPI: http.executor": "Debug",
-    "6cf28efc-aafb-466e-994e-8041462349cd.executor": "Debug",
-    "HTTP Request.RestfulOrdersAPI | CREATE.executor": "Run",
-    "HTTP Request.RestfulOrdersAPI | DELETE.executor": "Run",
-    "HTTP Request.RestfulOrdersAPI | GET.executor": "Run",
-    "HTTP Request.RestfulOrdersAPI | GETALL.executor": "Run",
-    "HTTP Request.RestfulOrdersAPI | UPDATE.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "d59ed4f7-7371-4404-b324-c039b6347c57.executor": "Debug",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "rider.code.cleanup.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.RestfulOrderAPI: http.executor&quot;: &quot;Debug&quot;,
+    &quot;6cf28efc-aafb-466e-994e-8041462349cd.executor&quot;: &quot;Debug&quot;,
+    &quot;HTTP Request.RestfulOrdersAPI | CREATE.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.RestfulOrdersAPI | DELETE.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.RestfulOrdersAPI | GET.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.RestfulOrdersAPI | GETALL.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.RestfulOrdersAPI | UPDATE.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;d59ed4f7-7371-4404-b324-c039b6347c57.executor&quot;: &quot;Debug&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/lamont/Library/Application Support/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/lamont/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/lamont/Library/Application Support/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RestfulOrderAPI: http">
     <configuration name="RestfulOrdersAPI | DELETE" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RestfulOrdersAPI.http" index="5" requestIdentifier="DELETE" runType="Run single request">
       <method v="2" />

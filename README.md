@@ -166,7 +166,7 @@ Specifies directories for the resulting DbContext and model classes.
 
 > Reference: [HTTP Testing Files](https://www.jetbrains.com/help/idea/exploring-http-syntax.html#use-a-variable-inside-the-request)
 
-[RestfulOrdersAPI.http](./RestfulOrdersAPI/RestfulOrdersAPI.http)
+[RestfulOrdersAPI.http](./RestfulOrderAPI/RestfulOrdersAPI.http)
 
 # NUnit 4
 
